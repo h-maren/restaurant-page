@@ -1,3 +1,6 @@
 import './style.css';
+import {title,cafeInfo} from './loadmain.js';
 
-console.log("test");
+const element=document.querySelector('#content');
+element.appendChild(title);
+element.appendChild(cafeInfo);
