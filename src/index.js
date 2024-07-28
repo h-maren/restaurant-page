@@ -1,6 +1,7 @@
 import './style.css';
 import {title,cafeInfo} from './loadmain.js';
 import {title as menuTitle, menu} from './menu.js';
+import {title as contactTitle, contactContainer} from './contact.js';
 
 const mainElement=document.querySelector('#content');
 
@@ -24,6 +25,13 @@ menuBtn.addEventListener('click', () => {
     //add new elements
     mainElement.appendChild(menuTitle);
     mainElement.appendChild(menu);
+});
+
+const contactBtn=document.querySelector('.contact-btn');
+contactBtn.addEventListener('click', () => {
+    clearPage();
+    mainElement.appendChild(contactTitle);
+    mainElement.appendChild(contactContainer);
 });
 
 function clearPage(){

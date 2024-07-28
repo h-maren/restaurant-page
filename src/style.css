@@ -1,12 +1,38 @@
-h1 {
-    margin: 0px;
-    color: white;
-    font-size: 64px;
+
+@font-face {
+    font-family: 'kaushan_scriptregular';
+    src: url('fonts/kaushanscript-regular-webfont.woff2') format('woff2'),
+         url('fonts/kaushanscript-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'source_sans_proregular';
+    src: url('fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('fonts/sourcesanspro-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 * {
     text-align: center;
+    font-family: 'source_sans_proregular', sans-serif;
 }
+
+
+h1,h4, button {
+    font-family: 'kaushan_scriptregular', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif  
+}
+
+h1 {
+    margin: 10px 0px;
+    color: white;
+    font-size: 64px;
+}
+
 
 body {
     background-image: url("images/coffeeshop.jpg");
@@ -47,4 +73,27 @@ button {
 p {
     color: white;
     font-size: 32px;
+}
+
+.totalMenu {
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(3,500px);
+}
+
+.menuCard, .contactCard {
+    background-color:  rgba(0,0,0,0.75);
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 10px;
+    padding: 20px;
+}
+
+h4 {
+    font-size:32px;
+    margin: 10px;
 }
